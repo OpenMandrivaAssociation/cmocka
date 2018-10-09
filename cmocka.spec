@@ -1,10 +1,11 @@
 %define major 0
 %define libname %mklibname cmocka %{major}
 %define devname %mklibname cmocka -d
+%define _disable_lto 1
 
 Summary:	C Unit Testing Framework
 Name:		cmocka
-Version:	1.1.1
+Version:	1.1.3
 Release:	1
 License:	BSD-like
 Group:		System/Libraries
