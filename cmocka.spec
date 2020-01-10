@@ -40,7 +40,7 @@ platforms (including embedded) and with different compilers.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 %cmake -G Ninja
 
 %build
