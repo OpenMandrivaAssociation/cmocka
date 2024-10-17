@@ -9,7 +9,7 @@ Version:	1.1.7
 Release:	1
 License:	BSD-like
 Group:		System/Libraries
-Url:		http://cmocka.org/
+Url:		https://cmocka.org/
 Source0:	https://cmocka.org/files/%(echo %{version} |cut -d. -f1-2)/cmocka-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
