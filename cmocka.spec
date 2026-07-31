@@ -5,7 +5,7 @@
 
 Summary:	C Unit Testing Framework
 Name:		cmocka
-Version:	1.1.7
+Version:	2.0.2
 Release:	1
 License:	BSD-like
 Group:		System/Libraries
