@@ -31,7 +31,7 @@ platforms (including embedded) and with different compilers.
 %package -n	%{devname}
 Summary:	Development tools for the cmocka unit test framework
 Group:		Development/C
-Requires:	%{libname} = %{version}-%{release}
+Requires:	%{libname} = %{EVRD}
 
 %description -n	%{devname}
 cmocka is a unit testing framework for C with support for mock objects.
@@ -50,7 +50,9 @@ platforms (including embedded) and with different compilers.
 %ninja_install -C build
 
 %files -n %{libname}
-%{_libdir}/libcmocka.so.%{major}*
+# SOVERSION is still 0 (libcmocka.so.0); VERSION is 1.0.2 so the
+# real file is libcmocka.so.1.0.2, which does not match .so.0*.
+%{_libdir}/libcmocka.so.*
 
 %files -n %{devname}
 %{_includedir}/*.h*
